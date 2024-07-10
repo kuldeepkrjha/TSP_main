@@ -1,0 +1,33 @@
+.news-updates {
+  margin: 15px;
+  background-color: #f2f2f2;
+  width: 70%;
+  height:10rem;
+  }
+  
+  .news-updates ul {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    list-style-type: none;
+  }
+  
+.news-updates h2{
+  margin: 10px;
+  padding-top:5px;
+}
+
+  .news-updates li {
+    margin-bottom: 10px;
+  }
+  
+  .news-updates li a {
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .news-updates li a:hover {
+    text-decoration: underline;
+  }
+  

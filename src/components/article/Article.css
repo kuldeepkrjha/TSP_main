@@ -1,0 +1,41 @@
+.articles {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  
+  .article-grid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .article-grid article {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px;
+  }
+  
+  .article-grid article h3 {
+    margin-top: 0;
+  }
+  
+  .article-grid article p {
+    margin-bottom: 10px;
+  }
+  
+  .article-grid article a {
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .article-grid article a:hover {
+    text-decoration: underline;
+  }
+  
