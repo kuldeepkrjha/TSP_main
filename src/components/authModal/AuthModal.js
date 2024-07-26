@@ -1,21 +1,25 @@
+// src/components/authModal/AuthModal.js
 import React from 'react';
-import './AuthModal.css';
+import Modal from '../Modal';
+import LoginForm from '../LoginForm';
+import RegisterForm from '../RegisterForm';
 
-const AuthModal = () => {
+const AuthModal = ({ showLogin, setShowLogin, showRegister, setShowRegister }) => {
   return (
-    <div id="modal" className="modal">
-      <div className="modal-content">
-        <form className="auth-form">
-          <h2>Login</h2>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" />
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" />
-          <button type="submit">Login</button>
-          <button type="button">Register</button>
-        </form>
-      </div>
-    </div>
+    <>
+      <Modal show={showLogin} onClose={() => setShowLogin(false)}>
+        <LoginForm switchToRegister={() => {
+          setShowLogin(false);
+          setShowRegister(true);
+        }} />
+      </Modal>
+      <Modal show={showRegister} onClose={() => setShowRegister(false)}>
+        <RegisterForm switchToLogin={() => {
+          setShowRegister(false);
+          setShowLogin(true);
+        }} />
+      </Modal>
+    </>
   );
 };
 

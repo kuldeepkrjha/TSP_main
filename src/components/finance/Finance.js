@@ -79,7 +79,7 @@ const FinancialSolutions = () => {
 
         <section className="section" id="government-schemes">
           <h2>Government Central Sponsored Schemes</h2>
-          <p>Lets Explore in Detail about various central level schemes for tribal development.</p> 
+          <p>Details about various central level schemes for tribal development.</p>
         </section>
 
         <section className="section" id="microloans">
@@ -100,16 +100,7 @@ const FinancialSolutions = () => {
         <section className="section" id="contact-support">
           <h2>Contact and Support</h2>
           <p>Contact us at: support@tribalfinance.org</p>
-          <p>E-Mail Address:ctd.cg@nic.in </p>
-          <p> Secretary :
-Tribal and Scheduled Caste Development Department
-Room No S-4, Mahanadi Bhawan
-New Raipur Chhattisgarh 492015</p>
-
-<p>Commissioner :
-Tribal and Scheduled Caste Development Department
-Block D Ground Floor, Indrawati Bhawan New Raipur Chhattisgarh 492015</p>
-          <p>Phone: +**********</p>
+          <p>Phone: +123 456 7890</p>
         </section>
 
         <button className="chat-button" onClick={handleChatToggle}>Chat</button>
@@ -139,21 +130,22 @@ Block D Ground Floor, Indrawati Bhawan New Raipur Chhattisgarh 492015</p>
             <Link to="/help">Help</Link>
           </div>
           <p>
-            Copyright &copy; 2024 - All Rights Reserved - Official Website of Department of Tribal and Scheduled Caste, Government of Chhattisgarh, India
+            Copyright &copy; 2017 - All Rights Reserved - Official Website of Department of Tribal and Scheduled Caste, Government of Chhattisgarh, India
             <br />
             Note: Content on this website is published and managed by Department of Tribal and Scheduled Caste, Government of Chhattisgarh,
             <br />
-            For any query regarding this website, please contact by E-mail ID: ctd.cg@nic.in
+            For any query regarding this website, please contact by E-mail ID: ctd[dot]cg[at]nic[dot]in
           </p>
+          <p>Last updated: 10-Jul-2024 7:30 pm</p>
           <div className="footer-logos">
-            <img src="./ministry.jpg" alt="Department Logo" className="footer-logo"/>
+            <img src="dept_logo.png" alt="Department Logo" className="footer-logo"/>
             <img src="support_group_logo.png" alt="Support Group Logo" className="footer-logo"/>
           </div>
-          {/* <div className="footer-certifications">
+          <div className="footer-certifications">
             <img src="w3c_css.png" alt="W3C CSS" className="footer-certification-logo"/>
             <img src="wai_aa_wcag.png" alt="WAI-AA WCAG 2.0" className="footer-certification-logo"/>
             <img src="achecker_wcag.png" alt="AChecker WCAG 1-A" className="footer-certification-logo"/>
-          </div> */}
+          </div>
         </footer>
       </div>
   );
