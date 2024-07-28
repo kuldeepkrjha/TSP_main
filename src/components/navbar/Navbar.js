@@ -1,6 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import './Navbar.css';
+
 import logo from "../../logo.png";
 
 const Navbar = ({ setShowLogin, setShowRegister }) => {
@@ -76,6 +75,10 @@ const Navbar = ({ setShowLogin, setShowRegister }) => {
           </div>
         </div>
       </div>
+
+      <div className="bg-white h-1 w-full"></div>
+
+
       {/* <div class="block lg:hidden">
         <div class="flex justify-between  items-center w-full rounded-md px-4 py-4">
           <a class="flex items-center gap-1.5" href="/">

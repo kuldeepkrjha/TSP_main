@@ -3,8 +3,11 @@ import './Article.css';
 
 const Articles = () => {
   return (
-    <section className="articles">
-      <h2>Latest Articles</h2>
+    <section className="pt-10">
+    <div className='relative z-10 items-center justify-between text-center'>
+    <h2 className='font-black animate-bounce text-3xl text-gray-300'>Latest Articles</h2>
+    </div>
+      
       <div className="article-grid">
         <article>
           <h3>Empowering Tribal Women through Entrepreneurship</h3>

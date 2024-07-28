@@ -15,7 +15,8 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App">
+      <div className="App bg-gradient-to-b from-gray-800 to-slate-500">
+      {/* bg-gradient-to-b from-gray-900 to-gray-300 */}
         <Navbar setShowLogin={setShowLogin} setShowRegister={setShowRegister} />
         <Routes>
           <Route path="/" element={<>
