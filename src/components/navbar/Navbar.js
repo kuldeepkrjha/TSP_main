@@ -2,136 +2,190 @@ import React from "react";
 // import { Link } from "react-router-dom";
 // import './Navbar.css';
 import logo from "../../logo.png";
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-
-const navigation = [
-  { name: "Financial Solutions", href: "/financial", current: true },
-  {
-    name: "Support Schemes",
-    href: "https://tribal.cg.gov.in/services",
-    current: false,
-  },
-  {
-    name: "Literacy Program",
-    href: "http://tsplearningprog.s3-website.ap-south-1.amazonaws.com",
-    current: false,
-  },
-  {
-    name: "Carbon Credit",
-    href: "http://tspsuraj.s3-website.ap-south-1.amazonaws.com",
-    current: false,
-  },
-];
 
 const Navbar = ({ setShowLogin, setShowRegister }) => {
   return (
-    <Disclosure
-      as="nav"
-      className="bg-gray-800"
-      text-white
-      flex
-      items-center
-      justify-between
-      p-4
-    >
-      <div class="flex items-center space-x-4 py-5 px-5">
-        <div className="logo">
-          <img
-            src={logo}
-            alt="Government of Chhattisgarh"
-            className="h-14 w-16 flex "
-          />
-        </div>
-        <h1 className="absolute flex items-center text-3xl px-20 text-white font-bold">
-          Government of Chhattisgarh
-        </h1>
-      </div>
-
-      {/* <nav>
-        <ul className="nav-list">
-          <li><Link to="/financial">Financial Solutions</Link></li>
-          <li><Link to="https://tribal.cg.gov.in/services">Support Schemes</Link></li>
-          <li><Link to="http://tsplearningprog.s3-website.ap-south-1.amazonaws.com">Literacy Program</Link></li>
-          <li><Link to="http://tspsuraj.s3-website.ap-south-1.amazonaws.com">Carbon Credit</Link></li>
-        </ul>
-      </nav> */}
-
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-              <span className="absolute -inset-0.5" />
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon
-                aria-hidden="true"
-                className="block h-6 w-6 group-data-[open]:hidden"
-              />
-              <XMarkIcon
-                aria-hidden="true"
-                className="hidden h-6 w-6 group-data-[open]:block"
-              />
-            </DisclosureButton>
-          </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    aria-current={item.current ? "page" : undefined}
-                    className={
-                      (item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                      "rounded-md px-3 py-2 text-sm font-medium")
-                    }
-                  >
-                    {item.name}
-                  </a>
-                ))}
+    <header className="z-[50] fixed top-0 w-full bg-gray-800 border-b border-transparent">
+      <div className="hidden lg:block">
+        <div className="px-20 flex h-16 items-center max-w-[88rem] mx-auto">
+          <div className="mr-4 hidden md:flex">
+            <a
+              class="flex px-7 items-center justify-center space-x-2 text-2xl font-bold py-6 text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
+              href="/"
+            >
+              <div className="text-sm text-emerald-500 relative z-20">
+                <img
+                  src={logo}
+                  alt="Government of Chhattisgarh"
+                  decoding="async"
+                  className="sm:h-10 sm:w-20 md:h-[55px] md:w-17 flex "
+                />
               </div>
+              <div className="flex flex-col">
+                <h1 className="text-black dark:text-white md:text-lg font-sans">
+                  Government of Chhattisgarh
+                </h1>
+              </div>
+            </a>
+
+            <nav className="flex items-center space-x-6 text-sm font-medium xl:flex">
+              <a
+                className="transition-colors  hover:text-white text-gray-400 hover:font-bold hidden sm:flex md:text-xs space-x-1"
+                href="/financial"
+              >
+                {" "}
+                Financial Solutions
+              </a>
+              <a
+                className="transition-colors hover:font-bold hover:text-white text-gray-400 hidden sm:flex md:text-xs space-x-1"
+                href="https://tribal.cg.gov.in/services"
+              >
+                {" "}
+                Support Schemes
+              </a>
+              <a
+                className="transition-colors hover:font-bold hover:text-white md:text-xs text-gray-400 hidden sm:flex space-x-1"
+                href="http://tsplearningprog.s3-website.ap-south-1.amazonaws.com"
+              >
+                {" "}
+                Literacy Program
+              </a>
+              <a
+                className="transition-colors hover:font-bold hover:text-white md:text-xs text-gray-400 hidden sm:flex space-x-1"
+                href="http://tspsuraj.s3-website.ap-south-1.amazonaws.com"
+              >
+                {" "}
+                Carbon Credit
+              </a>
+            </nav>
+            <div className="flex flex-1 items-center justify-end gap-2 sm:gap-2 md:justify-end md:gap-2 md:px-10">
+              <div className="ml-auto flex justify-end items-center px-10 space-x-4"></div>
+              <button
+                className="sm:flex relative hidden justify-start items-center md:text-xs text-sm shadow-lg hover:shadow-slate-500 font-bold hover:font-black py-2 w-fit border border-transparent px-6 rounded-xl bg-white dark:bg-brand hover:border-gray-900 hover:border-solid"
+                onClick={() => setShowLogin(true)}
+              >
+                Login
+              </button>
+              <button
+                className="sm:flex relative hidden justify-start items-center md:text-xs text-sm shadow-lg hover:shadow-slate-500 font-bold hover:font-black py-2 w-fit border border-transparent px-4 rounded-xl bg-white dark:bg-brand hover:border-gray-900 hover:border-solid"
+                onClick={() => setShowRegister(true)}
+              >
+                Register
+              </button>
             </div>
           </div>
         </div>
       </div>
+      {/* <div class="block lg:hidden">
+        <div class="flex justify-between  items-center w-full rounded-md px-4 py-4">
+          <a class="flex items-center gap-1.5" href="/">
+            <img
+              src={logo}
+              alt="Government of Chhattisgarh"
+              decoding="async"
+              className="h-6 w-6 object-contain flex "
+            />
+          </a>
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="text-black dark:text-white h-6 w-6"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z"></path>
+          </svg>
+          <div class="fixed inset-0 bg-white dark:bg-black z-50 flex flex-col items-start justify-start space-y-10  pt-3  text-xl text-zinc-600  transition duration-200 hover:text-zinc-800">
+            <div class="flex items-center justify-between w-full px-4">
+              <a class="flex items-center gap-1" href="/">
+                <img
+                  src={logo}
+                  alt="Government of Chhattisgarh"
+                  decoding="async"
+                  className="h-6 w-6 object-contain flex "
+                />
+              </a>
+              <div class="flex items-center justify-center">
+                <button class="whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 py-2 px-3 flex items-center justify-center outline-none focus:ring-0 focus:outline-none active:ring-0 active:outline-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-sun h-4 w-4  dark:text-neutral-500 text-neutral-500"
+                  >
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="m4.93 4.93 1.41 1.41"></path>
+                    <path d="m17.66 17.66 1.41 1.41"></path>
+                    <path d="M2 12h2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="m6.34 17.66-1.41 1.41"></path>
+                    <path d="m19.07 4.93-1.41 1.41"></path>
+                  </svg>
+                  <span class="sr-only">Toggle theme</span>
+                </button>
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  class="h-8 w-8 text-black dark:text-white"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[14px] px-5">
+              <a class="relative flex space-x-2 items-center" href="/financial">
+                <span class="block text-[26px] text-black dark:text-white">
+                  Financial Solutions
+                </span>
+              </a>
 
-      <DisclosurePanel className="sm:hidden">
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              aria-current={item.current ? "page" : undefined}
-              className={
-                (item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "block rounded-md px-3 py-2 text-base font-medium")
-              }
-            >
-              {item.name}
-            </DisclosureButton>
-          ))}
+              <a
+                class="relative flex space-x-2 items-center"
+                href="https://tribal.cg.gov.in/services"
+              >
+                <span class="block text-[26px] text-black dark:text-white">
+                  Support Schemes
+                </span>
+              </a>
+
+              <a
+                class="relative flex space-x-2 items-center"
+                href="http://tsplearningprog.s3-website.ap-south-1.amazonaws.com"
+              >
+                <span class="block text-[26px] text-black dark:text-white">
+                  Literacy Program
+                </span>
+              </a>
+
+              <a
+                class="relative"
+                href="http://tspsuraj.s3-website.ap-south-1.amazonaws.com"
+              >
+                <span class="block text-[26px] text-black dark:text-white">
+                  Carbon Credit
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
-      </DisclosurePanel>
-
-      <div className="auth-buttons">
-        <button className="button" onClick={() => setShowLogin(true)}>
-          Login
-        </button>
-        <button className="button" onClick={() => setShowRegister(true)}>
-          Register
-        </button>
-      </div>
-    </Disclosure>
+      </div> */}
+    </header>
   );
 };
 
