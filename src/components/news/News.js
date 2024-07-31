@@ -1,22 +1,19 @@
 import React from "react";
-// import "./News.css";
 import "../ui/sticky-scroll-reveal-ui/StickyScrollRevealDemo";
 import { StickyScrollRevealDemo } from "../ui/sticky-scroll-reveal-ui/StickyScrollRevealDemo";
 import "../ui/hover-border-latest-news-heading/HoverBorderGradientDemo"
-import { HoverBorderGradientDemo } from "../ui/hover-border-latest-news-heading/HoverBorderGradientDemo"; 
+
+
 
 const heading = "Ongoing News Updates";
 const NewsUpdates = () => {
   return (
-    <section className="">
-      <HoverBorderGradientDemo topic = {heading} 
-        className=""
-      />
-      {/* <ul>
-        <li><a href="#">New Government Support Scheme Launched for Tribal Youth</a></li>
-        <li><a href="#">Successful Implementation of Literacy Program in Remote Tribal Villages</a></li>
-      </ul> */}
-
+    <section className=" bg-slate-300">
+      
+      <div className=" relative flex items-center place-content-center top-5">
+      <div className=" h-9 w-72 text-center items-center sm:text-2xl animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-xl font-black ">{heading}</div>
+      </div>
+      
       <StickyScrollRevealDemo />
     </section>
   );

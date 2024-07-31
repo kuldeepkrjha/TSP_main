@@ -1,11 +1,32 @@
 import React, { useState, useEffect } from "react";
-import slide1 from "../../slide1.png";
-import slide2 from "../../slide2.png";
-import slide3 from "../../slide3.png";
+import { TypewriterEffect } from "../ui/typewriterEffect/typewriter-effect";
 
 import "./Hero.css"
 
-const slides = [slide1, slide2, slide3];
+const slides = [
+  "/assets/image/slide1.png",
+  "/assets/image/slide2.png",
+  "/assets/image/slide3.png",
+];
+
+const words = [
+  {
+    text: "Empowering",
+  },
+  {
+    text: "Tribal",
+  },
+  {
+    text: "Communities",
+  },
+  {
+    text: "In",
+    // className: " text-black ",
+  },
+  {
+    text: "Chhattisgarh",
+  }
+]
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,11 +52,13 @@ const Hero = () => {
       ))}
 
       <div className="relative z-10 text-center text-white p-4 bg-opacity-50 rounded-lg items-center justify-between">
-        <h1 className="font-black pt-32 text-slate-100 sm:text-7xl text-3xl">
+        <h1 className="font-black pt-32 text-slate-100 text-3xl sm:text-4xl md:text-5xl lg:text-7xl">
+        {/* text-base sm:text-lg md:text-2xl lg:text-3xl */}
           Tribal Development Initiatives
         </h1>
         <p className="pt-8 mb-8 font-bold text-slate-300 text-3xl">
-          Empowering Tribal Communities in Chhattisgarh
+          {/* Empowering Tribal Communities in Chhattisgarh */}
+          <TypewriterEffect words={words} />
         </p>
       </div>
 
