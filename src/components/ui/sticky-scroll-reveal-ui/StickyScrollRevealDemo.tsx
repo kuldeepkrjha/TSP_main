@@ -27,12 +27,11 @@ const content = [
     ),
   },
   {
-   
     description:
-    <LinkPreview url="https://adiprasaran.tribal.gov.in/"
+    <a href="https://adiprasaran.tribal.gov.in/"
       className="hover:text-blue-500 hover:underline">
         Union Budget 2024: FM Nirmala Sitharaman launches ‘Janjatiya Unnat Gram Abhiyan’ for tribal welfare ( Hindusthan Times )
-      </LinkPreview>
+      </a>
       ,
     content: (
 

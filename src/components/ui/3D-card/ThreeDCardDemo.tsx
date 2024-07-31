@@ -1,9 +1,7 @@
 "use client";
 
-// import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../3D-card/3d-card";
-// import Link from "next/link";
 
 type ThreeDCardDemoProps = {
   src:string;
@@ -11,6 +9,16 @@ type ThreeDCardDemoProps = {
   width?:number;
   height?: number;
   className?: string;
+};
+
+type ThreeDCardDevelopmentProps = {
+  content: {
+    title: string;
+  description: string;
+  name: string;
+  url: string;
+  }[]
+  
 };
 
 export const ThreeDCardDemo: React.FC<ThreeDCardDemoProps> = ({
@@ -44,3 +52,27 @@ export const ThreeDCardDemo: React.FC<ThreeDCardDemoProps> = ({
     </CardContainer>
   );
 }
+
+export const ThreeDCardDevelopment: React.FC<ThreeDCardDevelopmentProps> = ({
+  content,
+}) => {
+  return (
+    <div className="inter-var flex flex-col sm:flex-row sm:space-x-4 space-y-2">
+      {content.map((item, index) => (
+        <CardContainer key={index} className="w-80 h-72">
+          <CardBody className="bg-gray-50 relative rounded-xl p-6 border h-60 sm:h-64 ">
+            <CardItem translateZ="100" className="w-full mt-4">
+              <div>
+                <h2 className="font-bold text-lg">{item.title}</h2>
+                <p className="pt-4 pb-3">{item.description}</p>
+                <a href={item.url} className="text-blue-500 hover:text-blue-700 hover:underline">
+                  {item.name}
+                </a>
+              </div>
+            </CardItem>
+          </CardBody>
+        </CardContainer>
+      ))}
+    </div>
+  );
+};

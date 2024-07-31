@@ -1,31 +1,44 @@
 import React from 'react';
 import './Development.css';
 
+import { ThreeDCardDevelopment } from '../ui/3D-card/ThreeDCardDemo';
+
 const DevelopmentSections = () => {
   return (
     <section className="development-sections">
-      <div className="section">
-        <h2>Child and Women Support</h2>
-        <p>Programs and schemes for the welfare of tribal children and women.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div className="section">
-        <h2>Business Updates</h2>
-        <p>Latest news and updates on tribal business initiatives and opportunities.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div className="section">
-        <h2>Farming Data</h2>
-        <p>Information and updates on tribal farming practices and data.</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div className="section">
-        <h2>Social Welfare Schemes</h2>
-        <p>Details about various social welfare schemes for tribal communities.</p>
-        <a href="#">Learn more</a>
-      </div>
+      <ThreeDCardDevelopment content={content} />
     </section>
   );
 };
 
 export default DevelopmentSections;
+
+const content = [
+  {
+  title: "Child and Women Support",
+  description: "Programs and schemes for the welfare of tribal children and women.",
+  name: "Learn more",
+  url: "/",
+},
+{
+  title : "Business Updates",
+  description  : "Latest news and updates on tribal business initiatives and opportunities.",
+  name: "Learn more",
+  url: "/",
+},
+{
+  title : "Farming Data",
+  description  : "Information and updates on tribal farming practices and data.",
+  name: "Learn more",
+  url: "/",
+},
+{
+  title : "Social Welfare Schemes",
+  description  : "Details about various social welfare schemes for tribal communities.",
+  name: "Learn More",
+  url: "/",
+  
+},     
+
+]
+        
