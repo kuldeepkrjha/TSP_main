@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer">
+      <footer className="footer bg-gradient-to-b from-gray-600 to-gray-800 text-white">
         <div className="footer-Links">
           <a href="/accessibility-statement">Accessibility Statement</a>
           <a href="/copyright-policy">Copyright Policy</a>

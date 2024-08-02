@@ -1,14 +1,18 @@
 import React from 'react';
 // import './Article.css';
 import { InfiniteMovingCardsDemo } from '../ui/infinite-moving-cards/InfiniteMovingCardsDemo';
+import VideoBackground from '../ui/Video/VideoBackground';
 
+const videoProps = [
+  { src: '/assets/image/video2.mp4', type: 'video/mp4' }
+];
 
 
 const Articles = () => {
   return (
     <section className="pt-10">
-    
-    <div className='relative z-10 items-center justify-between text-center'>
+    <VideoBackground videos={videoProps}> </VideoBackground>
+    <div className='relative items-center justify-between text-center'>
     <h2 className='font-black animate-bounce text-3xl text-gray-300'>Latest Articles</h2>
     </div>
       {/* <div className="article-grid"> */}

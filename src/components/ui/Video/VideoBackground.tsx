@@ -2,12 +2,24 @@
 import React from 'react';
 import './VideoBackground.css'; 
 
-const VideoBackground: React.FC = () => {
+type VideoBackgroundProp = {
+  videos: {
+  src: string;
+  type: string; 
+}[],
+  
+}
+
+const VideoBackground: React.FC<VideoBackgroundProp> = ({
+videos
+}) => {
   return (
     <div className="video-background">
-      <video autoPlay loop muted playsInline className="video">
-        <source src="/assets/images/video1.mp4" type="video/mp4" />
-        {/* Your browser does not support the video tag. */}
+      <video autoPlay muted loop playsInline className="video">
+      {videos.map((video, index) => (
+          <source key={index} src={video.src} type={video.type} />
+        ))}
+        
       </video>
     </div>
   );
