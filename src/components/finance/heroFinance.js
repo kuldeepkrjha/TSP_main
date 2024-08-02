@@ -3,7 +3,7 @@ import VideoBackground from '../ui/Video/VideoBackground'
 import { TypewriterEffect, TypewriterEffectSmooth } from '../ui/typewriterEffect/typewriter-effect';
 
 const videoProps = [
-  { src: '/assets/image/video1.mp4', type: 'video/mp4' }
+  { src: '/assets/image/video3.mp4', type: 'video/mp4' }
 ];
 // Empowering Tribal  Through Financial Solutions
 const words = [
