@@ -7,6 +7,8 @@ import NewsUpdates from './components/news/News';
 import DevelopmentSections from './components/development/Development';
 import AuthModal from './components/authModal/AuthModal';
 import FinancialSolutions from './components/finance/Finance';
+import Footer from "./components/footer/Footer";
+
 import './App.css';
 
 const App = () => {
@@ -25,6 +27,7 @@ const App = () => {
             <Articles />
             
             <DevelopmentSections />
+            <Footer />
           </>} />
           <Route path="/financial" element={<FinancialSolutions />} />
         </Routes>

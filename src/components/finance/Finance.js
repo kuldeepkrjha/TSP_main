@@ -114,40 +114,7 @@ const FinancialSolutions = () => {
         </div>
       )}
 
-      <footer className="footer">
-        <div className="footer-links">
-          <Link to="/accessibility-statement">Accessibility Statement</Link>
-          <Link to="/copyright-policy">Copyright Policy</Link>
-          <Link to="/disclaimer">Disclaimer</Link>
-          <Link to="/site-map">Site Map</Link>
-          <Link to="/feedback">Feedback</Link>
-          <Link to="/hyperlink-policy">Hyperlink Policy</Link>
-          <Link to="/privacy-policy">Privacy Policy</Link>
-          <Link to="/terms-conditions">Terms & Condition</Link>
-          <Link to="/terms-of-use">Terms of Use</Link>
-          <Link to="/help">Help</Link>
-        </div>
-        <p>
-          © 2024 - All Rights Reserved - by IIT Bhilai's Innovation and Technology Foundation (IBITF) and Technology Innovation Hub (TIH) in collaboration with IIT Roorkee and JNU, New Delhi.
-          <br />
-          Content managed by Department of CSE, IIT Roorkee. For any queries, contact: <a href="mailto:sudip.roy@cs.iitr.ac.in">Email</a>
-        </p>
-        <p>Last updated: 27-Jul-2024 7:30 pm</p>
-        <div className="footer-logos">
-          <img src="./deplogo.png" alt="Department Logo" className="footer-logo"/>
-          <img src="./sglogo.png" alt="Support Group Logo" className="footer-logo"/>
-        </div>
-        <div className="footer-certifications">
-          <img src="w3c_css.png" alt="W3C CSS" className="footer-certification-logo"/>
-          <img src="wai_aa_wcag.png" alt="WAI-AA WCAG 2.0" className="footer-certification-logo"/>
-          <img src="achecker_wcag.png" alt="AChecker WCAG 1-A" className="footer-certification-logo"/>
-        </div>
-        <p>
-          Project: Adaptation of Indigenous and Local Knowledge Systems and Fintech Solutions for Comprehensive Tribal Development in Chhattisgarh (2024-2029)
-          <br />
-          Sponsored by IIT Bhilai's Innovation and Technology Foundation (IBITF) and Technology Innovation Hub (TIH) in collaboration with IIT Roorkee and JNU, New Delhi.
-        </p>
-      </footer>
+      
     </div>
   );
 };
