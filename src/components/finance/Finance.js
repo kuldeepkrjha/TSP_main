@@ -6,6 +6,7 @@ import Schemes from "./Schemes";
 import Faq from "./Faq";
 import Microloans from "./Microloans";
 import Contact from "./Contact";
+import FinancialLiteracy from "./FinancialLiteracy";
 
 const FinancialSolutions = () => {
   return (
@@ -14,6 +15,7 @@ const FinancialSolutions = () => {
       <SuccessStories />
       <Schemes />
       <Microloans />
+      <FinancialLiteracy />
       <Faq />
       <Contact />
       <Footer />
