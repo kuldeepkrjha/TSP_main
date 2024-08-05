@@ -1,0 +1,6 @@
+.bg-slide1 {
+  background-image: url('/assets/image/slide1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

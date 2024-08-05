@@ -78,7 +78,7 @@ export const CardStack = ({
               </div>
               <div>
                 <a href={card.href}>
-                  <p className="text-sky-500 hover:text-sky-700 hover:underline hover:font-black font-bold dark:text-neutral-200">
+                  <p className="text-sky-500 hover:text-sky-7 00 hover:underline hover:font-black font-bold dark:text-neutral-200">
                     {card.readMore}
                   </p>
                 </a>
