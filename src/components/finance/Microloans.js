@@ -7,7 +7,7 @@ const Microloans = () => {
   return (
     <div className='bg-gradient-to-b from-gray-900 to-gray-300 '>
       <HeroHighlight>
-      <h2 className=' text-white font-black text-8xl items-center text-center '>Microloans</h2>
+      <h2 className=' text-white font-black md:text-8xl text-5xl items-center text-center '>Microloans</h2>
       <motion.h1
         initial={{
           opacity: 0,

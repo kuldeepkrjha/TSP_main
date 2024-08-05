@@ -1,16 +1,28 @@
 import React from 'react'
 import { PinContainer } from "../ui/3D-pin/3d-pin";
+import { BackgroundBeams } from '../ui/background-beams/background-beams';
 
 
 const Contact = () => {
   return (
-    <div>
-    <div className='flex flex-col space-y-3'>
-    <h1 className='font-black text-white text-6xl text-left mb-4 mt-10'>Contact and Support</h1>
-      <div className="h-[40rem] w-full flex items-center justify-center ">
+    <div className="h-[45rem] w-full rounded-md bg-neutral-950 relative flex  items-center justify-center antialiased">
+      <div className="max-w-2xl mx-auto p-4">
+        <h1 className="relative z-10 text-3xl md:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+          Contact And Support
+        </h1>
+        <br></br>
+        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
+          Welcome to MailJet, the best transactional email service on the web.
+          We provide reliable, scalable, and customizable email solutions for
+          your business. Whether you&apos;re sending order confirmations,
+          password reset emails, or promotional campaigns, MailJet has got you
+          covered.
+        </p>
+       
+      <div className="h-[25rem] w-full flex items-center justify-center ">
       <PinContainer
-        title="/ui.aceternity.com"
-        href="https://twitter.com/mannupaaji"
+        title="sudip.roy@cs.iitr.ac.in"
+        href="mailto:sudip.roy@cs.iitr.ac.in"
       >
         <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
           <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
@@ -18,7 +30,8 @@ const Contact = () => {
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-500 ">
-            Contact us at: <a href="mailto:sudip.roy@cs.iitr.ac.in">mail us for financial suppport</a>
+            Click below to contact us Or <a href="mailto:sudip.roy@cs.iitr.ac.in">mail us for financial suppport.
+            </a>
             </span>
           </div>
           <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500" />
@@ -26,12 +39,11 @@ const Contact = () => {
       </PinContainer>
     </div>
     </div>
-
-    <div></div>
+    <BackgroundBeams />
     </div>
   )
 }
 
 export default Contact
 
-
+       
