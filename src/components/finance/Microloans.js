@@ -5,7 +5,7 @@ import { HeroHighlight, Highlight } from "../ui/hero-highlight/hero-highlight";
 
 const Microloans = () => {
   return (
-    <div className='bg-gradient-to-b from-gray-900 to-gray-300 '>
+    <div className=''>
       <HeroHighlight>
       <h2 className=' text-white font-black md:text-8xl text-5xl items-center text-center '>Microloans</h2>
       <motion.h1

@@ -3,9 +3,10 @@ import { CardStack } from "../ui/card-stack/card-stack";
 
 const SuccessStories = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-gray-300">
-      <h1 className=" mb-6 font-black text-5xl text-white ">Success Stories</h1>
-      <div className=" space-x-8 py-2 h-[30rem] flex items-center justify-center w-full">
+    <div className="bg-gradient-to-b from-gray-900 to-gray-300 md:h-[45rem] h-[47rem] items-center justify-between place-content-center">
+      <h1 className=" mb-4 md:mb-3 font-black text-5xl text-white text-center mt-4 md:mt-10 ">Success Stories</h1>
+      <div className=" space-x-2 md:space-x-2 lg:space-x-3 h-[30rem] flex items-center place-content-center text-center justify-between ml-0 md:ml-10 lg:ml-32 md:mt-[15rem] lg:mt-52 ">
+      {/* */}
         <CardStack items={CARDS1} />
         <CardStack items={CARDS2} />
       </div>
@@ -91,17 +92,4 @@ const CARDS2 = [
     src: "/assets/image/slide2",
     alt: "slide"
   },
-  {
-    id: 3,
-    readMore: "Read More",
-    content: (
-      <p>
-        3,000 women in rural Telangana generated a 15.5cr turnover last year. Here's how.
-      </p>
-    ),
-    href: "https://yourstory.com/2017/08/kodangal-telangana-farmer-producer-company",
-    src: "/assets/image/slide3",
-    alt: "slide"
-  },
-  
 ];
