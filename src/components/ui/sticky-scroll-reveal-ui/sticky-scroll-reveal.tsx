@@ -67,8 +67,8 @@ export const StickyScroll = ({
       className="h-[35rem] overflow-y-auto flex justify-center relative space-x-24 rounded-md p-10"
       ref={ref}
     >
-      <div className="relative flex items-start px-1 ">
-        <div className=" max-w-lg sm:max-w-2xl">
+      <div className="relative mt-6 place-items-center text-center place-content-center justify-between ">
+        <div className=" max-w-lg text-center place-content-center justify-between items-center sm:max-w-2xl">
           {content.map((item, index) => (
             <div key={index} className="my-5">
               {/* <motion.h2
@@ -90,7 +90,7 @@ export const StickyScroll = ({
                   opacity: activeCard === index ? 1 : 0.9,
                   // opacity of description text
                 }}
-                className={`text-kg text-slate-300 max-w-lg sm:max-w-2xl mt-5 sm:text-left text-center ${
+                className={`text-kg text-slate-300 max-w-lg sm:max-w-2xl mt-5 sm:text-left items-center text-center ${
                   activeCard === index ? 'animate-text bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 bg-clip-text text-transparent text-lg' : ''
                 }`}
               >
