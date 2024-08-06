@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { BentoGrid, BentoGridItem } from "../ui/FAQ_Bento-Grid/bento-grid";
 import {
   IconArrowWaveRightUp,
@@ -12,10 +13,21 @@ import {
 
 const Faq = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-gray-300">
+    <div className="bg-gradient-to-b from-gray-900 to-gray-300 flex flex-col">
     
-      <h1 className=" mb-6 items-center flex font-black text-5xl text-white ">Frequently Asked Questions</h1>
-      <BentoGrid className="max-w-4xl mx-auto">
+    <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.4,
+          duration: 0.8,
+          ease: "circIn",
+        }} className=' flex flex-col place-content-center text-center items-center'>
+     <h1 className=" p-10 mb-0 flex font-black text-5xl text-white text-center">Queries And FAQ</h1>
+     <p className="font-bold text-sm md:text-lg text-center text-slate-300 text-balance mt-1 mb-5">Recent government initiatives have significantly uplifted the tribal community, transforming lives through improved healthcare, quality education, and sustainable livelihood opportunities.</p>
+     </motion.div>
+
+      <BentoGrid className="max-w-4xl mx-auto mb-5">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
