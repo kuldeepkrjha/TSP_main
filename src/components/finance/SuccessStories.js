@@ -3,10 +3,14 @@ import { CardStack } from "../ui/card-stack/card-stack";
 
 const SuccessStories = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-gray-300 md:h-[45rem] h-[47rem] items-center justify-between place-content-center">
+    <div className="bg-gradient-to-b space-y-16 from-gray-900 to-gray-300 md:h-[48rem] h-[46rem] flex flex-col items-center">
+    <div>
       <h1 className=" mb-4 md:mb-3 font-black text-5xl text-white text-center mt-4 md:mt-10 ">Success Stories</h1>
-      <div className=" space-x-2 md:space-x-2 lg:space-x-3 h-[30rem] flex items-center place-content-center text-center justify-between ml-0 md:ml-10 lg:ml-32 md:mt-[15rem] lg:mt-52 ">
-      {/* */}
+      <p className="font-bold text-sm md:text-lg text-center text-slate-300 text-balance mt-4">Recent government initiatives have significantly uplifted the tribal community, transforming lives through improved healthcare, quality education, and sustainable livelihood opportunities. In Nandagaon, access to clean water and agricultural training has boosted the local economy and fostered self-reliance among residents. These success stories highlight the positive impact of government support, paving the way for a brighter future for all.</p>
+      </div>
+
+      <div className=" space-x-2 md:space-x-2 lg:space-x-20 w-full flex items-center place-content-center ">
+      {/*space-x-2 md:space-x-2 lg:space-x-3 ml-0 md:ml-10 lg:ml-32 */}
         <CardStack items={CARDS1} />
         <CardStack items={CARDS2} />
       </div>
