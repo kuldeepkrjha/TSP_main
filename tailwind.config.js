@@ -26,7 +26,7 @@ module.exports = {
   theme: {
     extend: {
       // backgroundImage: {
-      //   'slide1': "url('/assets/image/slide1.png')",
+      //   'bg2': "url('/assets/image/bg2.png')",
       // },
       animation: {
         text: "text 0.3s ease infinite",
