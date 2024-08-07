@@ -1,10 +1,20 @@
 import React from "react";
 import { BackgroundBeams } from "../ui/background-beams/background-beams";
 
+
 const Footer = () => {
+  const footerStyle = {
+    backgroundImage: "url('/assets/image/business1.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    color: 'white',
+    padding: '2.5rem 0',
+  };
   return (
-    <div className="text-white ">
-    {/* py-10 bg-bg2 bg-cover bg-center */}
+    <div style={footerStyle}>
+    <div className=" text-white py-10 ">
+      {/* py-10 bg-bg2 bg-cover bg-center */}
       <div className="flex justify-center mt-10 space-x-4">
         <img
           src="assets/image/Dep_logo.png"
@@ -122,6 +132,7 @@ const Footer = () => {
       </div>
 
       <BackgroundBeams />
+    </div>
     </div>
   );
 };

@@ -7,6 +7,8 @@ import Faq from "./Faq";
 import Microloans from "./Microloans";
 import Contact from "./Contact";
 import FinancialLiteracy from "./FinancialLiteracy";
+import Chat from "./Chat";
+import Developers from "./Developers";
 
 const FinancialSolutions = () => {
   return (
@@ -19,6 +21,8 @@ const FinancialSolutions = () => {
       <Faq />
       <Contact />
       <Footer />
+      <Chat />
+      <Developers/>
     </>
   );
 };

@@ -10,6 +10,7 @@ import FinancialSolutions from './components/finance/Finance';
 import Footer from "./components/footer/Footer";
 
 import './App.css';
+import Developers from './components/finance/Developers';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -28,6 +29,7 @@ const App = () => {
             
             <DevelopmentSections />
             <Footer />
+            <Developers />
           </>} />
           <Route path="/financial" element={<FinancialSolutions />} />
         </Routes>

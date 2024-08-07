@@ -52,44 +52,45 @@ const items = [
   {
     title: "What is the eligibility criteria for financial support?",
     description: "Learn about the requirements to qualify for financial assistance under the tribal development project.",
-    header: <Skeleton />,
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    // header: <Skeleton />,
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "How can I apply for the financial support scheme?",
     description: "Get step-by-step guidance on the application process for accessing financial aid.",
-    header: <Skeleton />,
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    // header: <Skeleton />,
+    // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "What types of projects are eligible for funding?",
     description: "Discover the kinds of tribal development projects that can receive financial support.",
-    header: <Skeleton />,
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "What is the loan repayment process and terms?",
-    description: "Understand the repayment terms, interest rates, and timelines for loans under this scheme.",
-    header: <Skeleton />,
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-  },
-  {
-    title: "Are there any subsidies or grants available?",
-    description: "Find out if there are any non-repayable grants or subsidies offered for tribal development initiatives.",
-    header: <Skeleton />,
-    icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    // header: <Skeleton />,
+    // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "How does the financial support program benefit tribal communities?",
     description: "Explore the impact and benefits of the financial assistance program on the economic development of tribal communities.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    // header: <Skeleton />,
+    // icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Are there any subsidies or grants available?",
+    description: "Find out if there are any non-repayable grants or subsidies offered for tribal development initiatives.",
+    // header: <Skeleton />,
+    // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+  },
+  
+  {
+    title: "What is the loan repayment process and terms?",
+    description: "Understand the repayment terms, interest rates, and timelines for loans under this scheme.",
+    // header: <Skeleton />,
+    // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Where can I find additional resources and support?",
     description: "Access additional information and resources for successful application and project implementation.",
-    header: <Skeleton />,
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    // header: <Skeleton />,
+    // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
   },
 ];
 

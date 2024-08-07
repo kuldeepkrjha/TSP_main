@@ -3,8 +3,17 @@ import { motion } from 'framer-motion'
 import { ExpandableCardDemo } from '../ui/outside-click-scheme/ExpandableCardDemo'
 
 const Schemes = () => {
+  const footerStyle = {
+    backgroundImage: "url('/assets/image/business1.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed',
+    color: 'white',
+    padding: '2.5rem 0',
+  };
   return (
-     <div className="bg-gradient-to-b from-gray-400 to-gray-900 text-center  flex flex-col ">
+    <div style={footerStyle}>
+     <div className=" text-center  flex flex-col ">
      <motion.div
         initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -21,7 +30,7 @@ const Schemes = () => {
       <ExpandableCardDemo />
       </div>
       
-    </div>
+    </div></div>
   )
 }
 

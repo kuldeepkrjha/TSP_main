@@ -17,7 +17,6 @@ const {
 
 const svgToDataUri = require("mini-svg-data-uri");
 
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
@@ -25,9 +24,7 @@ module.exports = {
 
   theme: {
     extend: {
-      // backgroundImage: {
-      //   'bg2': "url('/assets/image/bg2.png')",
-      // },
+      
       animation: {
         text: "text 0.3s ease infinite",
         scroll:
@@ -71,7 +68,6 @@ module.exports = {
       );
     },
   ],
-
 };
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

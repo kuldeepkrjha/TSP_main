@@ -11,7 +11,7 @@ const content = [
   {
   
     description:
-    <LinkPreview url="https://adiprasaran.tribal.gov.in/MediaCoverage/News/News_1607.pdf" className="hover:text-blue-500 hover:underline"> Budget Outlay of Ministry of Tribal Affairs Increased by 73 ִ 60 percent to about Rs 13000 Crore Compared to RE 2023 to 2024 ( PIB )</LinkPreview> ,
+    <a href="https://adiprasaran.tribal.gov.in/MediaCoverage/News/News_1607.pdf" className="hover:text-blue-500 hover:underline"> Budget Outlay of Ministry of Tribal Affairs Increased by 73 ִ 60 percent to about Rs 13000 Crore Compared to RE 2023 to 2024 ( PIB )</a> ,
     content: (
       // <div
       //  className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
