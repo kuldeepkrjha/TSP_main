@@ -90,12 +90,7 @@ export function ExpandableCardDemo() {
                     >
                       {active.title}
                     </motion.h3>
-                    <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
-                    >
-                      {active.description}
-                    </motion.p>
+                    
                   </div>
 
                   <motion.a
@@ -150,12 +145,7 @@ export function ExpandableCardDemo() {
                 >
                   {card.title}
                 </motion.h3>
-                <motion.p
-                  layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left"
-                >
-                  {card.description}
-                </motion.p>
+                
               </div>
             </div>
             <motion.button
@@ -206,112 +196,87 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    title: "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    src: "https://pmjdy.gov.in/mypics/pmjdylogo.png",
     ctaText: "Explore",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://pmjdy.gov.in/scheme",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Objective: Pradhan Mantri Jan-Dhan Yojana (PMJDY) is National Mission for Financial Inclusion to ensure access to financial services, namely, a basic savings & deposit accounts, remittance, credit, insurance, pension in an affordable manner. Under the scheme, a basic savings bank deposit (BSBD) account can be opened in any bank branch or Business Correspondent (Bank Mitra) outlet, by persons not having any other account.
         </p>
       );
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    title: "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)",
+    src: "https://aajeevika.gov.in/assets/images/AAJEEVIKA%20LOGO%20png.png",
     ctaText: "Explore",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Deendayal Antyodaya Yojana-National Rural Livelihood Mission (DAY-NRLM) is a flagship poverty alleviation program implemented by the Ministry of Rural Development, Government of India. It aims to reduce poverty by enabling the poor household to access gainful self-employment and skilled wage employment opportunities resulting in sustainable and diversified livelihood options for the poor. This is one of the world's largest initiatives to improve the livelihoods of the poor. The Mission seeks to achieve its objective through investing in four core components viz., (a) social mobilization and promotion and strengthening of self-managed and financially sustainable community institutions of the rural poor women; (b) financial inclusion; (c) sustainable livelihoods; and (d) social inclusion, social development and access to entitlements through convergence.
         </p>
       );
     },
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    title: "Stand-Up India Scheme for financing",
+    src: "https://www.standupmitra.in/Images/standuplogo.gif",
     ctaText: "Explore",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.standupmitra.in/Home/SchemeGuidelines",
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+         The objective of the Stand-Up India scheme is to facilitate bank loans between 10 lakh and 1 Crore to at least one Scheduled Caste (SC) or Scheduled Tribe (ST) borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise.
+This enterprise may be in manufacturing, services, agri-allied activities or the trading sector In case of non-individual enterprises at least
+51% of the shareholding and controlling stake should be held by either an SC/ST or Woman entrepreneur.
         </p>
       );
     },
   },
   {
-    description: "Led Zeppelin",
-    title: "Stairway To Heaven",
-    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    title: "Tribal Cooperative Marketing Development Federation of India (TRIFED)",
+    src: "https://www.sarkarimirror.com/wp-content/uploads/2017/09/trifed.png",
     ctaText: "Explore",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
+          To empower tribal communities through enhanced income generation from their produce. TRIFED has initiated steps to foster VanDhan Micro enterprises through 50-100 State level Producer Companies. VanDhan Producer Companies aims at enhancing productivity, cost reduction, efficient aggregation, large scale processing for value addition, better by-product utilization and efficient marketing of the produce.
+Details:
+Marketing support for Minor Forest Produce (MFP) and tribal handicrafts.
+Provides Minimum Support Price (MSP) for selected MFPs.
+Training and capacity building programs for tribal artisans.
         </p>
       );
     },
   },
   {
-    description: "Mustafa Zahid",
-    title: "Toh Phir Aao",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
+    title: "Mudra Yojana (Micro Units Development & Refinance Agency Ltd.)",
+    src: "https://www.mudra.org.in/images/logo.png",
     ctaText: "Explore",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.mudra.org.in/",
     content: () => {
       return (
         <p>
-          &quot;Aawarapan&quot;, a Bollywood movie starring Emraan Hashmi, is
-          renowned for its intense storyline and powerful performances. Directed
-          by Mohit Suri, the film has become a significant work in the Indian
-          film industry. <br /> <br /> The movie explores themes of love,
-          redemption, and sacrifice, capturing the essence of human emotions and
-          relationships. With a gripping narrative and memorable music,
-          &quot;Aawarapan&quot; has garnered a massive fan following both in
-          India and abroad, solidifying Emraan Hashmi&apos;s status as a
-          versatile actor.
+          Pradhan Mantri MUDRA Yojana (PMMY) is a scheme launched by the Hon’ble Prime Minister on April 8, 2015 for providing loans up to 10 lakh to the non-corporate, non-farm small/micro enterprises. These loans are classified as MUDRA loans under PMMY. These loans are given by Commercial Banks, RRBs, Small Finance Banks, MFIs and NBFCs. The borrower can approach any of the lending institutions mentioned above or can apply online through this portal www.udyamimitra.in . Under the aegis of PMMY, MUDRA has created three products namely 'Shishu', 'Kishore' and 'Tarun' to signify the stage of growth / development and funding needs of the beneficiary micro unit / entrepreneur and also provide a reference point for the next phase of graduation / growth.
+        </p>
+      );
+    },
+  },
+  {
+    title: "National Scheduled Tribes Finance and Development Corporation (NSTFDC)",
+    src: "https://dshelpingforever.com/wp-content/uploads/2022/03/Untitled-36.jpg",
+    ctaText: "Explore",
+    ctaLink: "https://nstfdc.tribal.gov.in/",
+    content: () => {
+      return (
+        <p>
+          The National Scheduled Tribes Finance and Development Corporation (NSTFDC) is an apex organisation set up in 2001 under the Ministry of Tribal Affairs, Government of India. Its primary aim is economic upliftment of the Scheduled Tribes by way of providing financial assistance for income generating/ sustainable livelihood activities.
+The Corporation has been implementing its various schemes through State Channelizing Agencies, the Regional Rural Banks, PSU Banks (having partnership with NSTFDC) - including the likes of National Cooperative Development Corporation (NCDC), Stree Nidhi, NEDFi, NABKISAN etc. During the last two decades of its existence the Corporation has been able to reach tens of thousands of beneficiaries in the target group across the country.
         </p>
       );
     },
