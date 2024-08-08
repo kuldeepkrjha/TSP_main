@@ -77,7 +77,7 @@ export function ExpandableCardDemo() {
                   height={200}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                  className=" w-full h-60 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                 />
               </motion.div>
 
@@ -126,22 +126,22 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col md:flex-row justify-between items-center hover:bg-slate-700 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-row justify-between items-center hover:bg-slate-700 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col md:flex-row ">
+            <div className="flex gap-4 flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <img
                   width={100}
                   height={100}
                   src={card.src}
                   alt={card.title}
-                  className="h-40 w-40 md:h-14 md:w-14 rounded-lg object-cover object-top"
+                  className=" h-14 w-14 rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-medium text-slate-300 hover:text-sky-600 hover:underline text-center md:text-left"
+                  className="font-medium text-slate-300 hover:text-sky-600 hover:underline text-xs sm:text-base text-bold text-balance text-left"
                 >
                   {card.title}
                 </motion.h3>
@@ -150,7 +150,7 @@ export function ExpandableCardDemo() {
             </div>
             <motion.button
               layoutId={`button-${card.title}-${id}`}
-              className="px-4 py-2 text-sm rounded-full font-bold bg-gray-300 hover:bg-slate-800 hover:text-white text-black mt-4 md:mt-0"
+              className="px-4 py-2 text-xs sm:text-sm rounded-full font-bold bg-gray-300 hover:bg-slate-800 hover:text-white text-black mt-4 md:mt-0"
             >
               {card.ctaText}
             </motion.button>

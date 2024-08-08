@@ -60,7 +60,7 @@ export const ThreeDCardDevelopment: React.FC<ThreeDCardDevelopmentProps> = ({
     <div className=" flex flex-col  md:flex-row md:space-x-2 space-y-0 lg:space-x-4">
       {content.map((item, index) => (
         <CardContainer key={index} className="md:w-52 md:h-52 lg:w-64 lg:h-48">
-          <CardBody className="bg-gray-50 relative rounded-xl p-6 border h-60 sm:h-64 ">
+          <CardBody className=" bg-gradient-to-b from-gray-400 via-slate-100 to-transparent relative rounded-xl p-6 border border-y-2 border-gray-500 h-60 sm:h-64">
             <CardItem translateZ="100" className="w-full mt-4">
               <div>
                 <h2 className="font-bold text-lg">{item.title}</h2>

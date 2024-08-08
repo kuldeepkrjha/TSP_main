@@ -2,8 +2,8 @@
 import React from "react";
 import { StickyScroll } from "./sticky-scroll-reveal";
 
-import { motion } from "framer-motion";
-import { LinkPreview } from "../linkPreview/link-preview";
+// import { motion } from "framer-motion";
+// import { LinkPreview } from "../linkPreview/link-preview";
 
 import { ThreeDCardDemo } from "../3D-card/ThreeDCardDemo";
 
