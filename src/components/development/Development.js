@@ -1,11 +1,11 @@
 import React from 'react';
-import './Development.css';
+// import './Development.css';
 
 import { ThreeDCardDevelopment } from '../ui/3D-card/ThreeDCardDemo';
 
 const DevelopmentSections = () => {
   return (
-    <section className="development-sections">
+    <section className="flex justify-center">
       <ThreeDCardDevelopment content={content} />
     </section>
   );
