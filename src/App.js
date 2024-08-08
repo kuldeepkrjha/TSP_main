@@ -10,7 +10,7 @@ import FinancialSolutions from './components/finance/Finance';
 import Footer from "./components/footer/Footer";
 
 import './App.css';
-import Developers from './components/finance/Developers';
+import Developers from './components/Developers';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
