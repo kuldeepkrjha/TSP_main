@@ -1,10 +1,8 @@
 import React from "react";
-import { BackgroundBeams } from "../ui/background-beams/background-beams";
-
 
 const Footer = () => {
   const footerStyle = {
-    backgroundImage: "url('/assets/image/business1.jpg')",
+    backgroundImage: "url('/assets/image/bg.png')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundAttachment: 'fixed',
@@ -130,8 +128,6 @@ const Footer = () => {
           and JNU, New Delhi.
         </div>
       </div>
-
-      <BackgroundBeams />
     </div>
     </div>
   );

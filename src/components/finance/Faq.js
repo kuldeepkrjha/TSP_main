@@ -51,47 +51,33 @@ const Skeleton = () => (
 const items = [
   {
     title: "What is the eligibility criteria for financial support?",
-    description: "Learn about the requirements to qualify for financial assistance under the tribal development project.",
-    // header: <Skeleton />,
-    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    description: "To qualify for financial assistance under the tribal development project, applicants must belong to a recognized tribal community, have a project proposal aimed at community development and many more.",
   },
   {
     title: "How can I apply for the financial support scheme?",
-    description: "Get step-by-step guidance on the application process for accessing financial aid.",
-    // header: <Skeleton />,
-    // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    description: "To apply for financial support, you need to submit an application form along with necessary documents like proof of tribal affiliation, project proposal, and income certificates. ",
   },
   {
     title: "What types of projects are eligible for funding?",
-    description: "Discover the kinds of tribal development projects that can receive financial support.",
-    // header: <Skeleton />,
-    // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    description: "Eligible projects typically include those that focus on community development, such as educational programs, healthcare initiatives, infrastructure improvements, and economic development activities. ",
   },
   {
     title: "How does the financial support program benefit tribal communities?",
-    description: "Explore the impact and benefits of the financial assistance program on the economic development of tribal communities.",
-    // header: <Skeleton />,
-    // icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+    description: "The financial assistance program provides crucial support for the economic development of tribal communities by funding projects that create jobs, improve access to education and healthcare, and enhance infrastructure. It also empowers communities to preserve their cultural heritage and promotes self-reliance through sustainable development initiatives. The overall impact is an improved quality of life and increased opportunities for community members.",
   },
   {
     title: "Are there any subsidies or grants available?",
-    description: "Find out if there are any non-repayable grants or subsidies offered for tribal development initiatives.",
-    // header: <Skeleton />,
-    // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+    description: "Yes, the program offers various subsidies and grants that do not require repayment. These are available for specific types of projects such as renewable energy installations, educational scholarships, and small business development. ",
   },
-  
   {
     title: "What is the loan repayment process and terms?",
-    description: "Understand the repayment terms, interest rates, and timelines for loans under this scheme.",
-    // header: <Skeleton />,
-    // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    description: "The loan repayment process involves paying back the borrowed amount according to the terms set by the program. ",
   },
   {
     title: "Where can I find additional resources and support?",
-    description: "Access additional information and resources for successful application and project implementation.",
-    // header: <Skeleton />,
-    // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    description: "Additional resources and support can be found through the program's official website, where you can access application guidelines, success stories, and contact information for support centers. Local tribal councils and development offices also provide assistance, including workshops, training sessions, and one-on-one consultations to help applicants successfully navigate the application process and implement their projects.",
   },
 ];
+
 
 
