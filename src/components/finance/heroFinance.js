@@ -33,8 +33,8 @@ const heroFinance
   return (
     <section className='relative h-screen flex flex-col justify-center items-center overflow-hidden'>
       <VideoBackground videos={videoProps}/>
-      <TypewriterEffectSmooth className=' text-slate-800' words={words} />
-      <p className=' text-2xl font-black  text-slate-100'>Discover how fintech and indigenous knowledge are transforming tribal communities.</p>
+      <TypewriterEffectSmooth className=' text-white' words={words} />
+      <p className=' text-xs text-center md:text-base lg:text-xl font-black  text-slate-100'>Discover how fintech and indigenous knowledge are transforming tribal communities.</p>
     </section>
   )
 }

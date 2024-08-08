@@ -39,7 +39,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex space-x-8 items-center text-center place-content-center mt-10 mb-9">
+      <div className="flex flex-wrap space-x-8 items-center text-center place-content-center mt-10 mb-9">
         <a
           href="/accessibility-statement"
           className=" hover:text-sky-400 hover:underline text-sm hover:text-base"
