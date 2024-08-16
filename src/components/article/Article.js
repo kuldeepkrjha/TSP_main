@@ -13,7 +13,16 @@ const Articles = () => {
     <section className="pt-10">
     <VideoBackground videos={videoProps}> </VideoBackground>
     <div className='relative items-center justify-between text-center'>
-    <h2 className='font-black animate-bounce text-3xl text-gray-300'>Latest Articles</h2>
+    <h2
+  className='font-black animate-bounce text-3xl text-gray-300'
+  style={{
+    textShadow: '0 0 8px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 0, 0, 0.6)',
+  }}
+>
+  Latest Articles
+</h2>
+
+
     </div>
       {/* <div className="article-grid"> */}
       <InfiniteMovingCardsDemo testimonials={testimonials} />
@@ -31,7 +40,6 @@ const testimonials = [
     name: "Empowering Tribal Women through Entrepreneurship",
     quote:
       "Learn how government initiatives are supporting tribal women in starting their own businesses.",
-    
     title: "Read More",
     url : "/"
   },
@@ -39,32 +47,28 @@ const testimonials = [
     name: "Sustainable Farming Practices in Tribal Areas",
     quote:
       "Explore the latest data and practices in sustainable farming adopted by tribal communities.",
-    
     title: "Read More",
     url : "/"
   },
   {
-    name: "Edgar Allan Poe",
-    quote: "All that we see or seem is but a dream within a dream.",
-    
-    title: "A Dream Within a Dream",
+    name: "Revitalizing Traditional Crafts in Tribal Regions",
+    quote:
+      "Discover how traditional tribal crafts are being revitalized and integrated into the modern market.",
+    title: "Read More",
     url: "/"
   },
   {
-    name: "Jane Austen",
+    name: "Healthcare Initiatives for Tribal Populations",
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-   
-    title: "Pride and Prejudice",
+      "Uncover the healthcare initiatives aimed at improving the well-being of tribal populations.",
+    title: "Read More",
     url: "/"
   },
   {
-    name: "Herman Melville",
+    name: "Educational Opportunities for Tribal Youth",
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    
-    title: "Moby-Dick",
+      "Learn about the educational programs and opportunities that are transforming the lives of tribal youth.",
+    title: "Read More",
     url: "/"
   },
 ];
-

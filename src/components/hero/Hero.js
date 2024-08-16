@@ -1,32 +1,41 @@
 import React, { useState, useEffect } from "react";
 import { TypewriterEffect } from "../ui/typewriterEffect/typewriter-effect";
 
-import "./Hero.css"
-
+// Array of image slides
 const slides = [
   "/assets/image/slide1.png",
   "/assets/image/slide2.png",
   "/assets/image/slide3.png",
 ];
 
+// Inline style for dark shadow glow effect
+const textShadowStyle = {
+  textShadow: '0 0 8px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 0, 0, 0.6)',
+};
+
+// Words with shadow effect to be used in the typewriter effect
 const words = [
   {
     text: "Empowering",
+    style: textShadowStyle,
   },
   {
     text: "Tribal",
+    style: textShadowStyle,
   },
   {
     text: "Communities",
+    style: textShadowStyle,
   },
   {
     text: "In",
-    // className: " text-black ",
+    style: textShadowStyle,
   },
   {
     text: "Chhattisgarh",
-  }
-]
+    style: textShadowStyle,
+  },
+];
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,13 +61,17 @@ const Hero = () => {
       ))}
 
       <div className="relative z-10 text-center text-white p-4 bg-opacity-50 rounded-lg items-center justify-between">
-        <h1 className="font-black pt-32 text-slate-100 text-3xl sm:text-4xl md:text-5xl lg:text-7xl">
-        {/* text-base sm:text-lg md:text-2xl lg:text-3xl */}
+        <h1
+          className="font-black pt-32 text-slate-100 text-3xl sm:text-4xl md:text-5xl lg:text-7xl"
+          style={textShadowStyle}
+        >
           Tribal Development Initiatives
         </h1>
-        <p className="pt-8 mb-8 font-bold text-slate-300 text-3xl">
-          {/* Empowering Tribal Communities in Chhattisgarh */}
-          <TypewriterEffect words={words} />
+        <p
+          className="pt-8 mb-8 font-bold text-slate-300 text-3xl"
+          style={textShadowStyle}
+        >
+          <TypewriterEffect words={words.map(word => ({ ...word }))} />
         </p>
       </div>
 
@@ -68,5 +81,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-

@@ -210,7 +210,7 @@ const cards = [
   },
   {
     title: "Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)",
-    src: "https://aajeevika.gov.in/assets/images/AAJEEVIKA%20LOGO%20png.png",
+    src: "/assets/image/DAY.png",
     ctaText: "Explore",
     ctaLink: "https://nrlm.gov.in/outerReportAction.do?methodName=showIndex#gsc.tab=0",
     content: () => {

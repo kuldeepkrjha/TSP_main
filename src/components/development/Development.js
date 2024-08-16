@@ -18,26 +18,25 @@ const content = [
   title: "Child and Women Support",
   description: "Programs and schemes for the welfare of tribal children and women.",
   name: "Learn more",
-  url: "/",
+  url: "https://wcd.nic.in/",
 },
 {
   title : "Business Updates",
   description  : "Latest news and updates on tribal business initiatives and opportunities.",
   name: "Learn more",
-  url: "/",
+  url: "https://trifed.tribal.gov.in/home",
 },
 {
   title : "Farming Data",
   description  : "Information and updates on tribal farming practices and data.",
   name: "Learn more",
-  url: "/",
+  url: "https://www.ibef.org/states/chhattisgarh",
 },
 {
   title : "Social Welfare Schemes",
   description  : "Details about various social welfare schemes for tribal communities.",
   name: "Learn More",
-  url: "/",
-  
+  url: "https://pib.gov.in/Pressreleaseshare.aspx?PRID=1575524"
 },     
 
 ]
