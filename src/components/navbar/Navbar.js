@@ -1,6 +1,7 @@
 import React from "react";
 
 import logo from "../../logo.png";
+import logo1 from "../../Dep_logo.png";
 import { FloatingNavDemo } from "../ui/floating Navbar for mobile device/FloatingNavDemo";
 
 const Navbar = ({ setShowLogin, setShowRegister }) => {
@@ -10,20 +11,26 @@ const Navbar = ({ setShowLogin, setShowRegister }) => {
         <div className="px-20 flex h-16 items-center max-w-[88rem] mx-auto">
           <div className="mr-4 hidden md:flex">
             <a
-              class="flex px-7 items-center justify-center space-x-2 text-2xl font-bold py-6 text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
+              className="flex px-7 items-center justify-center space-x-4 text-2xl font-bold py-6 text-center text-neutral-600 dark:text-gray-100 selection:bg-emerald-500 mr-10"
               href="/"
             >
-              <div className="text-sm text-emerald-500 relative z-20">
+              <div className="flex items-center space-x-4">
                 <img
                   src={logo}
                   alt="Government of Chhattisgarh"
                   decoding="async"
-                  className="sm:h-10 sm:w-20 md:h-[55px] md:w-17 flex "
+                  className="sm:h-10 sm:w-20 md:h-[55px] md:w-17"
+                />
+                <img
+                  src={logo1}
+                  alt="Dept. Logo"
+                  decoding="async"
+                  className="sm:h-10 sm:w-20 md:h-[55px] md:w-17"
                 />
               </div>
               <div className="flex flex-col">
                 <h1 className=" text-white dark:text-white md:text-base lg:text-lg font-sans">
-                  Government of Chhattisgarh
+                Tribal Empowerment through Indigenous Knowledge
                 </h1>
               </div>
             </a>
@@ -94,10 +101,16 @@ const Navbar = ({ setShowLogin, setShowRegister }) => {
               decoding="async"
               className="h-8 w-8 sm:h-10 sm:w-10 object-contain flex "
             />
+            <img
+                  src={logo1}
+                  alt="Dept. Logo"
+                  decoding="async"
+                  className="h-8 w-8 sm:h-10 sm:w-10 object-contain flex "
+                />
 
             <div className="flex flex-col">
               <h1 className=" text-white dark:text-white sm:text-lg font-bold font-sans">
-                Government of Chhattisgarh
+              Tribal Empowerment through Indigenous Knowledge
               </h1>
             </div>
           </a>

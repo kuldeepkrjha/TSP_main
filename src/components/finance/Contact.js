@@ -20,11 +20,8 @@ const Contact = () => {
         </h1>
         <br></br>
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-          Welcome to MailJet, the best transactional email service on the web.
-          We provide reliable, scalable, and customizable email solutions for
-          your business. Whether you&apos;re sending order confirmations,
-          password reset emails, or promotional campaigns, MailJet has got you
-          covered.
+          This page is currently under development. We're working on some exciting content and features that will be available soon. 
+          In the meantime, feel free to reach out to us by clicking the button below. We're here to help and would love to hear from you!
         </p>
         </motion.div>
        
@@ -39,7 +36,7 @@ const Contact = () => {
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
             <span className="text-slate-500 ">
-            Click below to contact us Or <a href="mailto:sudip.roy@cs.iitr.ac.in">mail us for financial suppport.
+            Click below to contact us <a href="mailto:sudip.roy@cs.iitr.ac.in">for any querries and suppports.
             </a>
             </span>
           </div>

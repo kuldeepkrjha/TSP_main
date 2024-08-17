@@ -78,7 +78,7 @@ const Footer = () => {
             © 2024 - All Rights Reserved - by IIT Bhilai's Innovation and Technology Foundation (IBITF) and Technology Innovation Hub (TIH) in collaboration with IIT Roorkee and JNU, New Delhi.
           </div>
           <div>
-            Content managed by Department of CSE, IIT Roorkee. For any queries, contact: <a href="mailto:sudip.roy@cs.iitr.ac.in" className="hover:text-sky-400 hover:underline">Email</a>
+            Content managed by Coda Lab, Department of CSE, IIT Roorkee. For any queries, contact: <a href="mailto:sudip.roy@cs.iitr.ac.in" className="hover:text-sky-400 hover:underline">Email</a>
           </div>
           <div>
             <p className="text-sm mb-5">Last updated: 27-Jul-2024 7:30 pm</p>
